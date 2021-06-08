@@ -36,8 +36,16 @@ end
 
 ### Generic Collection
 
+In a normal `.eex` File:
+
 ```elixir
 <%= PhoenixInlineSvg.Helpers.svg_image(@conn, "home") %>
+```
+
+With LiveView:
+
+```elixir
+<%= PhoenixInlineSvg.Helpers.svg_image(MyAppWeb.Endpoint, "home") %>
 ```
 
 Where `home` is the name of the SVG file you want to load.
